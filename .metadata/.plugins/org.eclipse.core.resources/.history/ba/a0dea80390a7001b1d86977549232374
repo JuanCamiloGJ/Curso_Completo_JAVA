@@ -57,11 +57,8 @@ class LaminaConImagen extends JPanel {
 		g.copyArea(0, 0, 25, 25, 150, 75);
 		for (int i = 0; i < 78; i++) {
 			for (int j = 0; j < 41; j++) {
-				if (i==0 && j==0) {
-					
-				}else {
 				g.copyArea(0, 0, 25, 25, i*25, j * 25);
-				}
+
 			}
 		}
 
