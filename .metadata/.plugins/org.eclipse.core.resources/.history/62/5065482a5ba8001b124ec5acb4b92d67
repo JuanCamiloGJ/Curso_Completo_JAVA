@@ -1,0 +1,72 @@
+package graficos;
+
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
+
+import javax.swing.JFrame;
+
+public class EventosVentana {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MarcoVentana mimarco=new MarcoVentana();
+		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}
+
+class MarcoVentana extends JFrame{
+	public MarcoVentana() {
+		setTitle("Respondiendo");
+		setBounds(300,300,500,350);
+		setVisible(true);
+		M_Ventana oyenteventana=new M_Ventana();
+		addWindowListener(oyenteventana);
+	}
+}
+
+class M_Ventana implements WindowListener{
+
+	@Override
+	public void windowOpened(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowClosing(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowClosed(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowIconified(WindowEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println("Ventana minimizada");
+	}
+
+	@Override
+	public void windowDeiconified(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowActivated(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowDeactivated(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

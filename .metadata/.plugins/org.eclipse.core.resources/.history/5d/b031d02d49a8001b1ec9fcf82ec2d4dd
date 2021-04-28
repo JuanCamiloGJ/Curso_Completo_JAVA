@@ -26,40 +26,17 @@ class MarcoBotones extends JFrame{
 		add(milamina);
 	}
 }
-class LaminaBotones extends JPanel {
+class LaminaBotones extends JPanel implements ActionListener{
 	JButton boton1=new JButton("¡Dame clic!");
-	JButton boton2=new JButton("Amarillo");
-	JButton boton3=new JButton("Rojo");
 	public LaminaBotones() {
 		add(boton1);
-		add(boton2);
-		add(boton3);
-		
-		ColorFondo Amarillo=new ColorFondo(Color.YELLOW);
-		ColorFondo Azul=new ColorFondo(Color.BLUE);
-		ColorFondo Rojo=new ColorFondo(Color.RED);
-		
-		boton1.addActionListener(Azul);
-		boton2.addActionListener(Amarillo);
-		boton3.addActionListener(Rojo);
+		boton1.addActionListener(this);
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		setBackground(Color.BLUE);
 	}
 	
-	
-	private class ColorFondo implements ActionListener{
-		private Color colordefondo;
-		public ColorFondo(Color c) {
-			colordefondo=c;
-			
-		}
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			setBackground(colordefondo);
-		}
-		
-		
-		
-	}
 	
 }
-
