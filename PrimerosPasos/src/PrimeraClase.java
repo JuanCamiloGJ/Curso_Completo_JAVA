@@ -22,5 +22,6 @@ class Var {
 		System.out.println(frase+ " "+ git+"del curso de git y git hub");
 	
 		System.out.println("Lo mejor del mundo mundial lo de git, ya porfin pude modificar todo y proyecto");
+		System.out.println("estoy intentando hacer un pull desde git");
 	}
 }
