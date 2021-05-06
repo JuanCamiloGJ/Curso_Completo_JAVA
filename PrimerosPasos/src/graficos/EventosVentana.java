@@ -1,5 +1,6 @@
 package graficos;
 
+import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
@@ -24,10 +25,11 @@ class MarcoVentana extends JFrame{
 		setVisible(true);
 		M_Ventana oyenteventana=new M_Ventana();
 		addWindowListener(oyenteventana);
+		
 	}
 }
 
-class M_Ventana implements WindowListener{
+class M_Ventana extends WindowAdapter{
 
 	@Override
 	public void windowOpened(WindowEvent e) {

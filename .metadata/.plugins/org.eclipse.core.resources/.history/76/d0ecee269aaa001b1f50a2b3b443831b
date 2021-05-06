@@ -1,0 +1,59 @@
+package graficos;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.*;
+public class Eventos_Raton {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MarcoRaton mimarco=new MarcoRaton();
+		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}
+class MarcoRaton extends JFrame{
+	
+	public MarcoRaton() {
+		
+		setVisible(true);
+		setBounds(700, 300, 600, 450);
+		addMouseListener(new EventosRaton());
+		
+	}
+}
+
+class EventosRaton implements MouseListener{
+
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println("haz hecho clic");
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println("acabas de entrar");
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println("acabas de salir");
+	}
+	
+	
+}
