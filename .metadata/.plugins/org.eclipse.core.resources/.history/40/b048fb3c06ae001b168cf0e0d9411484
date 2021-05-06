@@ -23,6 +23,5 @@ class Var {
 	
 		System.out.println("Lo mejor del mundo mundial lo de git, ya porfin pude modificar todo y proyecto");
 		System.out.println("estoy intentando hacer un pull desde git");
-		System.out.println("aqui estoy modificando en la rama master");System.out.println("esperemos salga bien el merch");
 	}
 }
