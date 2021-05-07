@@ -33,12 +33,17 @@
     <fullyQualifiedTypeName name="graficos.MarcoEmergente"/>
     <fullyQualifiedTypeName name="graficos.Lamina_Principal.OyenteNuevo"/>
     <fullyQualifiedTypeName name="graficos.MarcoEmergente.CierraTodos"/>
-    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
     <fullyQualifiedTypeName name="graficos.Panel_Layout"/>
     <fullyQualifiedTypeName name="graficos.Marco_Layout"/>
     <fullyQualifiedTypeName name="graficos.miMarco"/>
-    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
-    <fullyQualifiedTypeName name="javax.swing.JButton"/>
     <fullyQualifiedTypeName name="java.awt.LayoutManager"/>
+    <fullyQualifiedTypeName name="javax.swing.JButton"/>
     <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+    <fullyQualifiedTypeName name="graficos.Panel_Layout2"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="marco_Calculadora"/>
+    <fullyQualifiedTypeName name="laminaCalculadora"/>
+    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
+    <fullyQualifiedTypeName name="java.awt.GridLayout"/>
+    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
 </qualifiedTypeNameHistroy>

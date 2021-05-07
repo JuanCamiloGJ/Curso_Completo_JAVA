@@ -1,0 +1,81 @@
+import java.awt.*;
+
+import javax.swing.*;
+
+public class Calculadora {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		marco_Calculadora mimarco=new marco_Calculadora();
+		
+	}
+
+}
+class marco_Calculadora extends JFrame{
+	public marco_Calculadora() {
+		setTitle("Calculadora");
+		setBounds(500,300,450,300);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+		laminaCalculadora lamina=new laminaCalculadora();
+		lamina.display();
+		
+		add(lamina);
+		
+	
+	}
+}
+class laminaCalculadora extends JPanel{
+	
+	public void display() {
+		
+		setLayout(new BorderLayout());
+		JButton boton=new JButton("0");
+		add(boton, BorderLayout.NORTH);
+		boton.setEnabled(false);
+		JPanel lamina2=new JPanel();
+		lamina2.setLayout(new GridLayout(6,3));
+		for(int i=7; i>0; i++) {
+			//System.out.println("i vale :"+ i);
+			//lamina2.add(new JButton(""+i));
+			
+			if(i<9) {
+				lamina2.add(new JButton(""+i));
+				System.out.println("i vale :"+ i);
+			}
+			if(i==9) {
+				lamina2.add(new JButton(""+i));
+				i=4;
+			}
+			if(i<6){
+				lamina2.add(new JButton(""+i));
+				System.out.println("i vale :"+ i);
+				
+			}
+			if(i==6) {
+				lamina2.add(new JButton(""+i));
+				i=1;
+				
+			}
+			if(i<3) {
+				lamina2.add(new JButton(""+i));
+				System.out.println("i vale :"+ i);
+				
+			}
+			if(i==3) {
+				lamina2.add(new JButton(""+i));
+				i=-1;
+			}
+			
+		}
+		lamina2.add(new JButton("="));
+		lamina2.add(new JButton("*"));
+		lamina2.add(new JButton("+"));
+		lamina2.add(new JButton("-"));
+		lamina2.add(new JButton("/"));
+		lamina2.add(new JButton("."));
+		lamina2.add(new JButton(","));
+		add(lamina2, BorderLayout.CENTER);
+	}
+	
+}
