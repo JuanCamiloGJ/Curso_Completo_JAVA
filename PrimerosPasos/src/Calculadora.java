@@ -31,6 +31,7 @@ class marco_Calculadora extends JFrame{
 class laminaCalculadora extends JPanel{
 	private JButton boton;
 	private boolean principio;
+	//private JPanel lamina2;
 	public void display() {
 		principio=true;
 		setLayout(new BorderLayout());
@@ -58,14 +59,20 @@ class laminaCalculadora extends JPanel{
 			lamina2.add(botones);
 			
 		}
-		lamina2.add(new JButton("="));
-		lamina2.add(new JButton("*"));
-		lamina2.add(new JButton("+"));
-		lamina2.add(new JButton("-"));
-		lamina2.add(new JButton("/"));
-		lamina2.add(new JButton("."));
-		lamina2.add(new JButton(","));
+		ActionListener oyentesimbolos=new Operaciones();
+		lamina2.add(crearBoton("=", oyentesimbolos));
+		lamina2.add(crearBoton("*", oyentesimbolos));
+		lamina2.add(crearBoton("+", oyentesimbolos));
+		lamina2.add(crearBoton("-", oyentesimbolos));
+		lamina2.add(crearBoton("/", oyentesimbolos));
+		lamina2.add(crearBoton(".", oyentesimbolos));
+		//lamina2.add(new JButton(","));
 		add(lamina2, BorderLayout.CENTER);
+	}
+	public JButton crearBoton(String simbolo, ActionListener oyente) {
+		JButton botones=new JButton(simbolo);
+		botones.addActionListener(oyente);
+		return botones;
 	}
 	
 	private class InsertaNumero implements ActionListener{
@@ -73,6 +80,7 @@ class laminaCalculadora extends JPanel{
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
+			
 			String entrada=e.getActionCommand();
 			if(principio) {
 			boton.setText("");
@@ -83,4 +91,52 @@ class laminaCalculadora extends JPanel{
 		
 	}
 	
-}
+	private double resultado, resultado1=0;
+	private String ultimaoperacion="=";
+	private class Operaciones implements ActionListener{
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			
+			
+			
+			
+			calcular(Double.parseDouble(boton.getText()));
+			ultimaoperacion=e.getActionCommand();
+			resultado1=Double.parseDouble(boton.getText());
+			principio=true;
+		}
+		
+		public void calcular(Double x) {
+				System.out.println(ultimaoperacion);
+				
+				if(ultimaoperacion.equals("+")) {
+					resultado1+=x;
+					//boton.setText(""+resultado1);
+				}
+				if(ultimaoperacion.equals("-")) {
+					resultado1-=x;
+					//boton.setText(""+resultado1);
+				}
+				if(ultimaoperacion.equals("*")) {
+					resultado1*=x;
+					//boton.setText(""+resultado1);
+				}
+				if(ultimaoperacion.equals("/")) {
+					resultado1/=x;
+					//boton.setText(""+resultado1);
+				}
+				if(ultimaoperacion.equals("=")) {
+					//resultado1=Double.parseDouble(boton.getText());
+					resultado1=x;
+					
+				}
+				boton.setText(""+resultado1);
+					
+				}
+			}
+		}
+		
+		
+	

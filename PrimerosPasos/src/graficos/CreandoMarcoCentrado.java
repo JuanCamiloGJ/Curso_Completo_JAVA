@@ -11,7 +11,7 @@ public class CreandoMarcoCentrado {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		MarcoCentrado marco1=new MarcoCentrado();
-		
+		marco1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 }
