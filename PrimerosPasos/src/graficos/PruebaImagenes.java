@@ -3,7 +3,7 @@ package graficos;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
-import java.util.Iterator;
+//import java.util.Iterator;
 
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
@@ -49,8 +49,8 @@ class LaminaConImagen extends JPanel {
 		// g.drawImage(imagen, 5, 5, null);
 		// el operador this hace referencia a donde me encuentro en este caso la lamina
 		// es quiene spera que la imagen sea cargada
-		int anchuraImagen = imagen.getWidth(this);
-		int alturaImagen = imagen.getHeight(this);
+		//int anchuraImagen = imagen.getWidth(this);
+		//int alturaImagen = imagen.getHeight(this);
 		g.drawImage(imagen, 0, 0, 25, 25, null);
 
 		// copia un area y la replica

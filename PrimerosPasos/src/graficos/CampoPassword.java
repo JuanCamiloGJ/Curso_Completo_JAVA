@@ -3,10 +3,10 @@ package graficos;
 import java.awt.*;
 
 import javax.swing.*;
-import javax.swing.border.Border;
+//import javax.swing.border.Border;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import javax.swing.text.Document;
+//import javax.swing.text.Document;
 
 public class CampoPassword {
 
@@ -79,29 +79,6 @@ class LaminaPassword extends JPanel{
 		add(btnEnviar,BorderLayout.SOUTH);
 		
 
-		
-	}
-	
-	private class Comprueba_pass implements DocumentListener{
-
-		@Override
-		public void insertUpdate(DocumentEvent e) {
-			// TODO Auto-generated method stub
-			
-		}
-
-		@Override
-		public void removeUpdate(DocumentEvent e) {
-			// TODO Auto-generated method stub
-			
-		}
-
-		@Override
-		public void changedUpdate(DocumentEvent e) {
-			// TODO Auto-generated method stub
-			
-		}
-		
 		
 	}
 	

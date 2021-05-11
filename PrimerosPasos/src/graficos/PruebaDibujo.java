@@ -11,7 +11,7 @@ public class PruebaDibujo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		MarcoConDibujos marco=new MarcoConDibujos();
-		
+		marco.setVisible(true);
 	}
 
 }
@@ -37,7 +37,7 @@ class LaminaConFiguras extends JPanel{
 		//g.drawArc(50, 100, 100, 200, 120, 150);
 		
 		//dibuja un rectangulo
-		Graphics2D g2=(Graphics2D) g; //importante la refundición
+		Graphics2D g2=(Graphics2D) g; //importante la refundiciï¿½n
 		Rectangle2D rectangulo=new Rectangle2D.Double(100,100,200,150);
 		g2.draw(rectangulo);
 		

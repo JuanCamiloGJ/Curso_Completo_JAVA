@@ -2,7 +2,7 @@ package graficos;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
-import java.awt.LayoutManager;
+//import java.awt.LayoutManager;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
