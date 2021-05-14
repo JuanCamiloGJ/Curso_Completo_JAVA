@@ -7,8 +7,6 @@
     <fullyQualifiedTypeName name="graficos.MarcoVentana"/>
     <fullyQualifiedTypeName name="java.awt.event.WindowAdapter"/>
     <fullyQualifiedTypeName name="graficos.MarcoEstado"/>
-    <fullyQualifiedTypeName name="java.awt.event.WindowStateListener"/>
-    <fullyQualifiedTypeName name="java.awt.Frame"/>
     <fullyQualifiedTypeName name="graficos.MarcoConTeclas"/>
     <fullyQualifiedTypeName name="java.awt.event.KeyListener"/>
     <fullyQualifiedTypeName name="graficos.MarcoRaton"/>
@@ -29,7 +27,6 @@
     <fullyQualifiedTypeName name="graficos.Lamina_Principal"/>
     <fullyQualifiedTypeName name="graficos.Marco_Principal"/>
     <fullyQualifiedTypeName name="graficos.MArcoEmergente"/>
-    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
     <fullyQualifiedTypeName name="graficos.MarcoEmergente"/>
     <fullyQualifiedTypeName name="graficos.Lamina_Principal.OyenteNuevo"/>
     <fullyQualifiedTypeName name="graficos.MarcoEmergente.CierraTodos"/>
@@ -37,7 +34,6 @@
     <fullyQualifiedTypeName name="graficos.Marco_Layout"/>
     <fullyQualifiedTypeName name="graficos.miMarco"/>
     <fullyQualifiedTypeName name="java.awt.LayoutManager"/>
-    <fullyQualifiedTypeName name="javax.swing.JButton"/>
     <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
     <fullyQualifiedTypeName name="graficos.Panel_Layout2"/>
     <fullyQualifiedTypeName name="javax.swing.JFrame"/>
@@ -46,4 +42,10 @@
     <fullyQualifiedTypeName name="javax.swing.JPanel"/>
     <fullyQualifiedTypeName name="java.awt.GridLayout"/>
     <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="laminaCalculadora.InsertaNumero"/>
+    <fullyQualifiedTypeName name="java.awt.event.WindowStateListener"/>
+    <fullyQualifiedTypeName name="java.awt.Frame"/>
+    <fullyQualifiedTypeName name="jdk.internal.misc.FileSystemOption"/>
+    <fullyQualifiedTypeName name="javax.swing.JButton"/>
 </qualifiedTypeNameHistroy>
