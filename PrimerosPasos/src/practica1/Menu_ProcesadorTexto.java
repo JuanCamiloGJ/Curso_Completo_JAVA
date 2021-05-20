@@ -30,7 +30,7 @@ public class Menu_ProcesadorTexto extends JPanel {
 		//creacion de menus
 		fuentesJMenu =new JMenu("Fuentes");
 		estiloJMenu =new JMenu("Estilo");
-		tamañoJMenu =new JMenu("Tamaño");
+		tamanoJMenu =new JMenu("TamaÃ±o");
 		//creacion de items de menu de jmenus
 		agregarItems("Arial", "Fuentes");
 		agregarItems("Courier", "Fuentes");
@@ -44,11 +44,11 @@ public class Menu_ProcesadorTexto extends JPanel {
 		agregarItems("20", "Tamagno");
 		barraMenuBar.add(estiloJMenu);
 		barraMenuBar.add(fuentesJMenu);
-		barraMenuBar.add(tamañoJMenu);
-		//añadiendo a panelsuperior
+		barraMenuBar.add(tamanoJMenu);
+		//aÃ±adiendo a panelsuperior
 		panelSuperior= new JPanel();
 		panelSuperior.add(barraMenuBar);
-		//añadiendo a panel de clase
+		//aÃ±adiendo a panel de clase
 		add(panelSuperior,BorderLayout.NORTH);
 	}
 	public void agregarItems(String nItem, String menuC) {
@@ -61,15 +61,15 @@ public class Menu_ProcesadorTexto extends JPanel {
 			estiloJMenu.add(itemGlobal);
 			itemGlobal.addActionListener(new eventosEstilo());
 		}else if (menuC.equals("Tamagno")) {
-			tamañoJMenu.add(itemGlobal);
-			itemGlobal.addActionListener(new eventosTamaño());
+			tamanoJMenu.add(itemGlobal);
+			itemGlobal.addActionListener(new eventosTamano());
 		}
 	}
 	
 	public void crearArea() {
 		textoJTextPane= new JTextPane();
 		JScrollPane scrollPane= new JScrollPane(textoJTextPane);
-		//añadiendo a panel de clase
+		//aï¿½adiendo a panel de clase
 		add(scrollPane, BorderLayout.CENTER);
 		
 		
@@ -121,7 +121,7 @@ public class Menu_ProcesadorTexto extends JPanel {
 		
 		
 	}
-	private class  eventosTamaño implements ActionListener{
+	private class  eventosTamano implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
@@ -135,7 +135,7 @@ public class Menu_ProcesadorTexto extends JPanel {
 	
 	
 	private JMenuBar barraMenuBar;
-	private JMenu fuentesJMenu, estiloJMenu, tamañoJMenu;
+	private JMenu fuentesJMenu, estiloJMenu, tamanoJMenu;
 	private JTextPane textoJTextPane;
 	
 	private JPanel panelSuperior;
