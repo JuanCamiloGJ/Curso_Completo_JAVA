@@ -8,9 +8,9 @@ public class AreasFiguras {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Elige una opci�n: \n1: Cuadrado \n2: Rectangulo \n3: Triangulo \n4: Circulo");
-		Scanner opseleccion=new Scanner(System.in);
 		
-		int figura=opseleccion.nextInt();
+		
+		int figura=new Scanner(System.in).nextInt();
 		switch(figura) {
 		
 		case 1://Calculo �rea Cuadrado

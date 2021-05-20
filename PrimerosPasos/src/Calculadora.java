@@ -9,7 +9,7 @@ public class Calculadora {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		marco_Calculadora mimarco=new marco_Calculadora();
-		
+		mimarco.setVisible(true);
 	}
 
 }
@@ -18,7 +18,7 @@ class marco_Calculadora extends JFrame{
 		setTitle("Calculadora");
 		setBounds(500,300,450,300);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setVisible(true);
+		
 		laminaCalculadora lamina=new laminaCalculadora();
 		lamina.display();
 		
@@ -91,7 +91,7 @@ class laminaCalculadora extends JPanel{
 		
 	}
 	
-	private double resultado, resultado1=0;
+	private double resultado1=0;
 	private String ultimaoperacion="=";
 	private class Operaciones implements ActionListener{
 		
