@@ -1,10 +1,12 @@
 package graficos;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 
 public class MarcoMenu {
 
@@ -42,9 +44,14 @@ class MenuLamina extends JPanel{
 		JMenuItem guardar = new JMenuItem("Guardar");
 		JMenuItem guardarComo = new JMenuItem("Guardar Como");
 		
-		JMenuItem cortar = new JMenuItem("Cortar");
-		JMenuItem copiar = new JMenuItem("Copiar");
-		JMenuItem pegar = new JMenuItem("Pegar");
+		JMenuItem cortar = new JMenuItem("Cortar",new ImageIcon("src/imagenes/cortar.png"));
+		JMenuItem copiar = new JMenuItem("Copiar",new ImageIcon("src/imagenes/copiar.png"));
+		
+		//cambia la posición de la imagen que tiene el JMenuItem por defecto esta a la izquierda
+		//al pocisionar el texto a la izquierda erl texto termina en la derecha
+		copiar.setHorizontalTextPosition(SwingConstants.LEFT);
+		
+		JMenuItem pegar = new JMenuItem("Pegar",new ImageIcon("src/imagenes/pegar.png"));
 		
 		JMenuItem Generales = new JMenuItem("Generales");
 		//submenu de un menu

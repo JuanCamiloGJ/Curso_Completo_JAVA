@@ -1,8 +1,9 @@
-content_assist_number_of_computers=12
-content_assist_proposals_background=255,255,255
-content_assist_proposals_foreground=0,0,0
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.awt.AWTKeyStroke"><rhs name\="javax.swing.KeyStroke"/></lhs><lhs name\="javax.swing.KeyStroke"><rhs name\="javax.swing.KeyStroke"/></lhs><lhs name\="javax.accessibility.Accessible"><rhs name\="javax.swing.JMenuBar"/><rhs name\="javax.swing.Box"/></lhs><lhs name\="javax.swing.MenuElement"><rhs name\="javax.swing.JMenuBar"/></lhs><lhs name\="javax.swing.JComponent"><rhs name\="javax.swing.JMenuBar"/><rhs name\="javax.swing.Box"/></lhs><lhs name\="javax.swing.TransferHandler$HasGetTransferHandler"><rhs name\="javax.swing.JMenuBar"/><rhs name\="javax.swing.Box"/></lhs><lhs name\="java.awt.Container"><rhs name\="javax.swing.JMenuBar"/><rhs name\="javax.swing.Box"/></lhs><lhs name\="java.awt.Component"><rhs name\="javax.swing.JMenuBar"/><rhs name\="javax.swing.Box"/></lhs><lhs name\="java.awt.image.ImageObserver"><rhs name\="javax.swing.JMenuBar"/><rhs name\="javax.swing.Box"/></lhs><lhs name\="java.awt.MenuContainer"><rhs name\="javax.swing.JMenuBar"/><rhs name\="javax.swing.Box"/></lhs><lhs name\="javax.swing.JMenuBar"><rhs name\="javax.swing.JMenuBar"/></lhs><lhs name\="java.util.EventListener"><rhs name\="javax.swing.text.StyledEditorKit$AlignmentAction"/><rhs name\="javax.swing.text.StyledEditorKit$BoldAction"/><rhs name\="javax.swing.text.StyledEditorKit$ItalicAction"/><rhs name\="javax.swing.text.StyledEditorKit$UnderlineAction"/><rhs name\="javax.swing.text.StyledEditorKit$ForegroundAction"/></lhs><lhs name\="java.awt.event.ActionListener"><rhs name\="javax.swing.text.StyledEditorKit$AlignmentAction"/><rhs name\="javax.swing.text.StyledEditorKit$BoldAction"/><rhs name\="javax.swing.text.StyledEditorKit$ItalicAction"/><rhs name\="javax.swing.text.StyledEditorKit$UnderlineAction"/><rhs name\="javax.swing.text.StyledEditorKit$ForegroundAction"/></lhs><lhs name\="java.awt.Paint"><rhs name\="java.awt.Color"/></lhs><lhs name\="java.awt.Transparency"><rhs name\="java.awt.Color"/></lhs><lhs name\="java.awt.Color"><rhs name\="java.awt.Color"/></lhs><lhs name\="javax.swing.Box"><rhs name\="javax.swing.Box"/></lhs></history>
+content_assist_number_of_computers=15
 eclipse.preferences.version=1
-org.eclipse.jdt.ui.formatterprofiles.version=20
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=21
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true

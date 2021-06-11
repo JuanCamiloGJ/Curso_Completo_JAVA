@@ -30,18 +30,19 @@ public class Menu_ProcesadorTexto extends JPanel {
 		//creacion de menus
 		fuentesJMenu =new JMenu("Fuentes");
 		estiloJMenu =new JMenu("Estilo");
-		tamanoJMenu =new JMenu("TamaÃ±o");
+		tamanoJMenu =new JMenu("Tamaño");
 		//creacion de items de menu de jmenus
 		agregarItems("Arial", "Fuentes");
 		agregarItems("Courier", "Fuentes");
 		agregarItems("Verdana", "Fuentes");
+		
 		agregarItems("Negrita", "Estilo");
 		agregarItems("Cursiva", "Estilo");
-		agregarItems("Sin estilo", "Estilo");
+		
 		agregarItems("12", "Tamagno");
 		agregarItems("16", "Tamagno");
 		agregarItems("18", "Tamagno");
-		agregarItems("20", "Tamagno");
+		agregarItems("24", "Tamagno");
 		barraMenuBar.add(estiloJMenu);
 		barraMenuBar.add(fuentesJMenu);
 		barraMenuBar.add(tamanoJMenu);
@@ -93,29 +94,34 @@ public class Menu_ProcesadorTexto extends JPanel {
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
 			Font fuentepret=textoJTextPane.getFont();
-			//System.out.println(fuentepret.getStyle());
-			//textoJTextPane.setFont(new Font(fuentepret.getFontName(),0, fuentepret.getSize()));
 			
 			
-			if (e.getActionCommand()=="Negrita") {
-				fuentepret=fuentepret.deriveFont(1);
-				//textoJTextPane.setFont(new Font(fuentepret.getFontName(),1, fuentepret.getSize()));
-				textoJTextPane.setFont(fuentepret);
-				System.out.println("negrita code: " +textoJTextPane.getFont().getStyle());
-				
+			
+			if(e.getActionCommand()=="Negrita") {
+				if (fuentepret.getStyle()==1 || fuentepret.getStyle()==3) {
+					fuentepret =fuentepret.deriveFont(fuentepret.getStyle()-1);
+					textoJTextPane.setFont(fuentepret);
+					System.out.println("es mayor a 1");
+				}else {
+					fuentepret=fuentepret.deriveFont(1+fuentepret.getStyle());
+					textoJTextPane.setFont(fuentepret);
+					System.out.println("es menor a 1 "+ fuentepret.getStyle());
+				}
 			}
-			if (e.getActionCommand()=="Cursiva") {
-				fuentepret=fuentepret.deriveFont(2);
-				//textoJTextPane.setFont(new Font(fuentepret.getFontName(),Font.ITALIC, fuentepret.getSize()));
-				textoJTextPane.setFont(fuentepret);
-				System.out.println("cursiva code: " +textoJTextPane.getFont().getStyle()+" variable font"+ fuentepret.getStyle());
-			}
-			if (e.getActionCommand()=="Sin estilo") {
-				fuentepret=fuentepret.deriveFont(0);
-				//textoJTextPane.setFont(new Font(fuentepret.getFontName(),Font.PLAIN, fuentepret.getSize()));
-				textoJTextPane.setFont(fuentepret);
-				System.out.println("sin e code: " +textoJTextPane.getFont().getStyle());
-			}
+			
+			if(e.getActionCommand()=="Cursiva") {
+				if (fuentepret.getStyle()>=2) {
+					fuentepret =fuentepret.deriveFont(fuentepret.getStyle()-2);
+					textoJTextPane.setFont(fuentepret);
+				}else {
+					fuentepret =fuentepret.deriveFont(2+fuentepret.getStyle());
+					textoJTextPane.setFont(fuentepret);
+				}
+			}	
+			
+			
+			
+		
 		
 		}
 		
