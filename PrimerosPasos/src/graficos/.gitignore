@@ -112,3 +112,7 @@
 /DisposicionMuelle.class
 /LaminaMuelle.class
 /MarcoMuelle.class
+/LibreDisposicion.class
+/LaminaLibre.class
+/MarcoLibre.class
+/EnColumnas.class
