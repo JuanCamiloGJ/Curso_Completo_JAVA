@@ -8,7 +8,7 @@ public class Entrada_Ejemplo2 {
 		int edad=Integer.parseInt(JOptionPane.showInputDialog("introduce la edad, por favor"));
 		
 		
-		
+		System.out.println("probando commit github");
 		System.out.println("Hola "+ nombre_usuario+ "el proximo año tendra "+ (edad+1)+ "años");
 		
 
