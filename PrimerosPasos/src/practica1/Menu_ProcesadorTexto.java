@@ -18,7 +18,6 @@ import javax.swing.JTextPane;
 
 public class Menu_ProcesadorTexto extends JPanel {
 	public Menu_ProcesadorTexto() {
-		// TODO Auto-generated constructor stub
 		setLayout(new BorderLayout());
 		crearMenu();
 		crearArea();

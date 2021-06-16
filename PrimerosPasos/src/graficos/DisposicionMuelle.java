@@ -20,7 +20,6 @@ public class DisposicionMuelle {
 class MarcoMuelle extends JFrame{
 	
 	public MarcoMuelle() {
-		// TODO Auto-generated constructor stub
 	setBounds(300, 400, 1000, 350);
 	LaminaMuelle milamina= new LaminaMuelle();
 	add(milamina);
