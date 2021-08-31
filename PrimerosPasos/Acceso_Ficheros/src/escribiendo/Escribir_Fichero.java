@@ -1,0 +1,10 @@
+package escribiendo;
+
+public class Escribir_Fichero {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
