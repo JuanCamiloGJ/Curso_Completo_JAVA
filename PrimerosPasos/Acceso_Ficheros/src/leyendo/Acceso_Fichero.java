@@ -1,5 +1,6 @@
 package leyendo;
 
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -20,11 +21,20 @@ class Leer_Fichero {
 		
 		try {
 			FileReader entrada= new FileReader("D:/Usuario/juank/Escritorio/Cursos doing/Streams.txt");
-			int  c= 0;
-			while(c!=-1) {
-				c= entrada.read();
-				char letra= (char)c;
-				System.out.print(letra);
+			/*se crea la instancia del buffer y se le pasa por variable
+			 * el objeto FileReader, que especifica la ruta del documento. 
+			 */
+			BufferedReader mibuffer= new BufferedReader(entrada);
+			
+			String linea="";
+			
+			while(linea!=null) {
+				//esto lee linea a linea
+				linea= mibuffer.readLine();
+				if(linea!=null) {
+					System.out.println(linea);	
+				}
+				
 				
 			}
 			entrada.close();
