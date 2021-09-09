@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="graficos.Lamina_Principal.OyenteNuevo"/>
-    <fullyQualifiedTypeName name="graficos.MarcoEmergente.CierraTodos"/>
-    <fullyQualifiedTypeName name="graficos.Panel_Layout"/>
-    <fullyQualifiedTypeName name="graficos.Marco_Layout"/>
-    <fullyQualifiedTypeName name="graficos.miMarco"/>
-    <fullyQualifiedTypeName name="java.awt.LayoutManager"/>
-    <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
     <fullyQualifiedTypeName name="graficos.Panel_Layout2"/>
     <fullyQualifiedTypeName name="marco_Calculadora"/>
     <fullyQualifiedTypeName name="laminaCalculadora"/>
@@ -54,10 +47,17 @@
     <fullyQualifiedTypeName name="javax.swing.JTextArea"/>
     <fullyQualifiedTypeName name="javax.swing.JTextPane"/>
     <fullyQualifiedTypeName name="clases_propias.Persona"/>
-    <fullyQualifiedTypeName name="clases_propias.Pareja"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="clases_propias.MetodosGenericos"/>
-    <fullyQualifiedTypeName name="clases_propias.Empleado"/>
     <fullyQualifiedTypeName name="clases_propias.MisMatrices"/>
     <fullyQualifiedTypeName name="T"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="clases_propias.Jefe"/>
+    <fullyQualifiedTypeName name="clases_propias.Empleado"/>
+    <fullyQualifiedTypeName name="clases_propias.Pareja"/>
+    <fullyQualifiedTypeName name="java.awt.desktop.ScreenSleepEvent"/>
+    <fullyQualifiedTypeName name="usothreads.Pelota"/>
+    <fullyQualifiedTypeName name="java.awt.Component"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="usothreads.PelotaHilos"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>

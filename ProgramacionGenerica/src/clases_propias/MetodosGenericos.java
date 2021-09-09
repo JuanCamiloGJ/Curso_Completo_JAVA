@@ -24,6 +24,10 @@ class MisMatrices{
 	 * arrays, se le indica la "T" como tipo generico, al igual que antes de 
 	 * establecer lo que retorna se establece con <T> que es generico.
 	 */
+	/*se utiliza extends ya que podemos usar todas las clases que implementen la interfaz 
+	 * comparable, y clases que hereden la misma.
+	 * 
+	 */
 	public static <T extends Comparable> T getMenor(T[]array) {
 		if(array==null || array.length==0) {
 			return null;
