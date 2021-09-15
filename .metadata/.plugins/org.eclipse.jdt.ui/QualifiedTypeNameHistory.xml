@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="graficos.Panel_Layout2"/>
-    <fullyQualifiedTypeName name="marco_Calculadora"/>
-    <fullyQualifiedTypeName name="laminaCalculadora"/>
-    <fullyQualifiedTypeName name="java.awt.GridLayout"/>
-    <fullyQualifiedTypeName name="laminaCalculadora.InsertaNumero"/>
-    <fullyQualifiedTypeName name="java.awt.event.WindowStateListener"/>
-    <fullyQualifiedTypeName name="java.awt.Frame"/>
     <fullyQualifiedTypeName name="jdk.internal.misc.FileSystemOption"/>
     <fullyQualifiedTypeName name="graficos.LaminaCheck.ManejaChecks"/>
     <fullyQualifiedTypeName name="graficos.MarcoCheck"/>
-    <fullyQualifiedTypeName name="javax.swing.JButton"/>
     <fullyQualifiedTypeName name="graficos.Marco_radio_sintaxis"/>
     <fullyQualifiedTypeName name="graficos.Lamina_radio_sintaxis"/>
     <fullyQualifiedTypeName name="graficos.Marco_radio"/>
@@ -28,8 +20,6 @@
     <fullyQualifiedTypeName name="javax.swing.JMenuBar"/>
     <fullyQualifiedTypeName name="javax.swing.JLabel"/>
     <fullyQualifiedTypeName name="javax.swing.JPanel"/>
-    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
-    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="javax.swing.JMenu"/>
     <fullyQualifiedTypeName name="javax.swing.JMenuItem"/>
@@ -59,5 +49,15 @@
     <fullyQualifiedTypeName name="java.awt.Component"/>
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
     <fullyQualifiedTypeName name="usothreads.PelotaHilos"/>
+    <fullyQualifiedTypeName name="javax.swing.JButton"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
+    <fullyQualifiedTypeName name="usothreads.HilosVarios"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="usothreads.Banco"/>
+    <fullyQualifiedTypeName name="usothreads.EjecucionTransferencias"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.locks.Lock"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.locks.ReentrantLock"/>
 </qualifiedTypeNameHistroy>
