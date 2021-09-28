@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="jdk.internal.misc.FileSystemOption"/>
-    <fullyQualifiedTypeName name="graficos.LaminaCheck.ManejaChecks"/>
-    <fullyQualifiedTypeName name="graficos.MarcoCheck"/>
-    <fullyQualifiedTypeName name="graficos.Marco_radio_sintaxis"/>
-    <fullyQualifiedTypeName name="graficos.Lamina_radio_sintaxis"/>
-    <fullyQualifiedTypeName name="graficos.Marco_radio"/>
-    <fullyQualifiedTypeName name="graficos.Lamina_radio.Radioevent"/>
-    <fullyQualifiedTypeName name="javax.swing.JRadioButton"/>
-    <fullyQualifiedTypeName name="javax.swing.ButtonGroup"/>
-    <fullyQualifiedTypeName name="org.graalvm.compiler.virtual.phases.ea.PartialEscapeBlockState.Final"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
-    <fullyQualifiedTypeName name="graficos.LaminaSpinner.MiModeloJSpinner"/>
     <fullyQualifiedTypeName name="graficos.MenuLamina"/>
     <fullyQualifiedTypeName name="graficos.MenuFrame"/>
     <fullyQualifiedTypeName name="practica1.Frame_ProcesadorTexto"/>
@@ -40,7 +28,6 @@
     <fullyQualifiedTypeName name="clases_propias.MetodosGenericos"/>
     <fullyQualifiedTypeName name="clases_propias.MisMatrices"/>
     <fullyQualifiedTypeName name="T"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="clases_propias.Jefe"/>
     <fullyQualifiedTypeName name="clases_propias.Empleado"/>
     <fullyQualifiedTypeName name="clases_propias.Pareja"/>
@@ -55,9 +42,22 @@
     <fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
     <fullyQualifiedTypeName name="usothreads.HilosVarios"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="usothreads.Banco"/>
     <fullyQualifiedTypeName name="usothreads.EjecucionTransferencias"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="java.util.concurrent.locks.Lock"/>
     <fullyQualifiedTypeName name="java.util.concurrent.locks.ReentrantLock"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.locks.Condition"/>
+    <fullyQualifiedTypeName name="usothreads.Banco"/>
+    <fullyQualifiedTypeName name="com.sun.tools.classfile.Opcode.Set"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="deafult.Libro"/>
+    <fullyQualifiedTypeName name="deafult.UsoLibro"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="deafult.Cliente"/>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.oops.java_lang_Class"/>
+    <fullyQualifiedTypeName name="sun.awt.geom.AreaOp.AddOp"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.ListIterator"/>
 </qualifiedTypeNameHistroy>
