@@ -38,9 +38,9 @@ class CambiaEstado implements WindowStateListener{
 		}else if(e.getNewState()==Frame.ICONIFIED) {
 			System.out.println("la ventana est� minimizada");
 		}
+	
+
+
+	
 	}
-
-
-	
-	
 }
