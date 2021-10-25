@@ -1,0 +1,22 @@
+<Context>
+	<!-- name=nombre identificativo
+		type=hace referencia al pool de conexiones
+		maxActive= maximo de conexiones activas a tener
+		maxIdle= maximo de conexiones inactivas como maximo
+		maxWait= tiempo de espera de un usuario para una conexion
+		username= usuario de mi gestior de bd
+		password= contrraseña de mi gestor de bd
+		driverClassName= el driver de mi gestor
+		url= aqui va la conexion a la base de datos que me voy a conectar
+	 -->
+	<Resource 	name="jdbc/Productos" auth="Container" type="javax.sql.DataSource"
+				maxActive="15" maxIdle="3" maxWait="5000"
+				username= "root" password=""
+				driverClassName="com.mysql.cj.jdbc.Driver"
+				url="jdbc:mysql://localhost:3306/pruebas"
+	></Resource>
+
+
+
+
+</Context>

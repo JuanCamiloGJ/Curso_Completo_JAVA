@@ -3,10 +3,10 @@
     pageEncoding="ISO-8859-1"%>
     <!--aqui se especifica en el prefix que tipod e tag utilizar ene ste ejemplo utilizaremos el core-->
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
-    
+
     <%
     String alumno [] ={"Antonio","Sandra","Maria","Paco"};
-    
+    String prueba= "Prueba";
     pageContext.setAttribute("losAlumnos", alumno);
     	
     

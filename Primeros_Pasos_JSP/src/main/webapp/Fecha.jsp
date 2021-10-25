@@ -1,1 +1,1 @@
-Fecha:<%= new java.util.Date()%>
+Fecha:<%= new java.util.Date()%> 
