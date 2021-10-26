@@ -1,6 +1,7 @@
 package com.pildorasinformaticas.productos;
 
 import java.io.IOException;
+
 import java.util.List;
 
 import javax.sql.DataSource;
@@ -76,12 +77,27 @@ public class ControladorProductos extends HttpServlet {
 			switch (elComando) {
 			case "listar":
 				obtenerProductos(request, response);
-			 break;
+				break;
 			 
 			case "insertarBBDD":
-				agregarProducto(request, request);
+				agregarProducto(request, response);
 				break;
-			
+			case "cargar":
+				try {
+					cargarProductos(request, response);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				break;
+			case "actualizarBBDD":
+				try {
+					actualizarProducto(request, response);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}				
+				break;
 			default:
 				obtenerProductos(request, response);
 			}
@@ -92,7 +108,46 @@ public class ControladorProductos extends HttpServlet {
 
 
 
-	private void agregarProducto(HttpServletRequest request, HttpServletRequest request2) {
+	private void actualizarProducto(HttpServletRequest request, HttpServletResponse response) throws Exception{
+		// TODO Auto-generated method stub
+		//Leer los datos que le vienen del formulario actualizar
+		String cArt= request.getParameter("cArt");
+		String seccion= request.getParameter("seccion");
+		String nArt= request.getParameter("nArt");
+		String fecha= request.getParameter("fecha");
+		double precio=Double.parseDouble(request.getParameter("precio"));
+		String importado= request.getParameter("importado");
+		String pOrig= request.getParameter("pOrig");
+		// crear un objeto de tipo producto con la info del formulario
+		Productos productoActualizado =  new Productos(cArt, seccion, nArt, precio, fecha, importado, pOrig);
+		
+		// actualizar bbdd con info de objeto producto
+		modeloProductos.actualizarProducto(productoActualizado);
+		// volver al listado con info actualizada
+		obtenerProductos(request, response);
+	}
+
+
+
+
+	private void cargarProductos(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		// TODO Auto-generated method stub
+		// Leer el C Articulo que viene del listado
+			String codigoArticuloString= request.getParameter("cArt");
+			 
+		// Comunicar con el modelo y enviar c.art
+			Productos elProducto= modeloProductos.getProducto(codigoArticuloString);
+		// colocar atributo correspondiente al c.art
+			request.setAttribute("ProductoActualizar", elProducto);
+		//enviar producto al formulario de actualizar
+			RequestDispatcher dispatcher= request.getRequestDispatcher("/ActualizarProducto.jsp");
+			dispatcher.forward(request, response);
+	}
+
+
+
+
+	private void agregarProducto(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
 		
 		
@@ -101,14 +156,34 @@ public class ControladorProductos extends HttpServlet {
 			String cArt= request.getParameter("cArt");
 			String seccion= request.getParameter("seccion");
 			String nArt= request.getParameter("nArt");
+			
+			//pasamos un string a un tipo date
+			/*SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd");
+			Date fecha=null;
+			try {
+				fecha= dateFormat.parse(request.getParameter("fecha"));
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			*/
 			String fecha= request.getParameter("fecha");
-			String precio= request.getParameter("precio");
+			double precio=Double.parseDouble(request.getParameter("precio"));
 			String importado= request.getParameter("importado");
 			String pOrig= request.getParameter("pOrig");
 		
 		//crear un objrto der tipo producto
+			
+			Productos nuevoProducto =  new Productos(cArt, seccion, nArt, precio, fecha, importado, pOrig);
+			
+			
 		//enviar el objeto al modelo y despues insertar el objeto producto en la BBDD
+		
+			modeloProductos.agregarNuevoProducto(nuevoProducto);
+			
 		//Volver al listado de Productos
+			request.setAttribute("instruccion", "listar");
+			obtenerProductos(request, response);
 	}
 
 
