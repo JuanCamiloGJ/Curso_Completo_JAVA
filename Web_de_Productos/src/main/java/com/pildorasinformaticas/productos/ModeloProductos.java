@@ -211,6 +211,43 @@ public class ModeloProductos {
 		
 	}
 
+	public void eliminarProducto(String cArt) {
+		// TODO Auto-generated method stub
+		Connection miConnection= null;
+		PreparedStatement miPreparedStatement= null;
+		
+		//estblecer conexion con BBDD
+		try {
+			miConnection= origenDataSource.getConnection();
+		
+		//crear instrucion Sql de eliminacion
+			
+			String SQLins="DELETE FROM PRODUCTOSCSV WHERE CÓDIGOARTÍCULO=?";
+		//preparar la consulta
+			miPreparedStatement= miConnection.prepareStatement(SQLins);
+			
+		//establecer parametros 
+			miPreparedStatement.setString(1, cArt);
+		//ejecutar sentencia SQL
+			miPreparedStatement.execute();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println("no se a podido eliminar el producto "+ e.getMessage() );
+			
+			e.printStackTrace();
+		}finally {
+			try {
+				miConnection.close();
+				miPreparedStatement.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+	}
+
 	
 	
 }

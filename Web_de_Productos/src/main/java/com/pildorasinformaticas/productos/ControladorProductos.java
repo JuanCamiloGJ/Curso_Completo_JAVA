@@ -98,11 +98,39 @@ public class ControladorProductos extends HttpServlet {
 					e.printStackTrace();
 				}				
 				break;
+				
+			case "eliminar":
+				
+				try {
+					eliminarProducto(request,response);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+				break;
 			default:
 				obtenerProductos(request, response);
 			}
 		
 	
+	}
+
+
+
+
+	private void eliminarProducto(HttpServletRequest request, HttpServletResponse response) throws Exception{
+		// TODO Auto-generated method stub
+		//capturar el codigo articulo (campo clave)
+		
+		String cArt= request.getParameter("cArtEliminar");
+		
+		//borrar producto BBDD
+		
+		modeloProductos.eliminarProducto(cArt);
+		//volver al listado de productos
+		
+		obtenerProductos(request, response);
 	}
 
 

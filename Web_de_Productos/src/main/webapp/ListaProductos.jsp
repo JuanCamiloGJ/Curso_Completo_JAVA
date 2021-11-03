@@ -62,6 +62,19 @@
 		<!-- aquei nosa da la posibilidad de leer esta variable y buscar por articulo -->
 			<c:param name="cArt" value="${temProd.cArt}"></c:param>
 		</c:url>	
+		
+		<!--  link para eliminar un registro con su campo clave -->
+		
+		<!-- cuando de clic en la url ira a ControladorProductos -->
+		<c:url var="linkTempEliminar" value="ControladorProductos">
+		<!-- see specifica key y valor, en el servlet ya tenemos instruccion a leer -->
+			<c:param name="instruccion" value="eliminar"></c:param>
+		<!-- aquei nosa da la posibilidad de leer esta variable y buscar por articulo -->
+			<c:param name="cArtEliminar" value="${temProd.cArt}"></c:param>
+		</c:url>	
+		
+		
+		
 		<tr> 
 		
 			<td class="filas">${temProd.cArt}</td>
@@ -71,7 +84,7 @@
 			<td class="filas">${temProd.precio}</td>
 			<td class="filas">${temProd.importado}</td>
 			<td class="filas">${temProd.pOrig}</td>
-			<td class="filas"> <a href="${linkTemp}">Actualizar</a> </td>
+			<td class="filas"> <a href="${linkTemp}">Actualizar</a> &nbsp; &nbsp; <a href="${linkTempEliminar}">Eliminar</a> </td>
 			
 			
 			
